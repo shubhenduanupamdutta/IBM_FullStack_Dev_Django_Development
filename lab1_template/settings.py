@@ -12,9 +12,9 @@ DATABASES = {
         "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
         "HOST": "localhost",
         "PORT": "5432",
-    }
+    },
 }
 
-INSTALLED_APPS = ("orm",)
+INSTALLED_APPS = ["orm"]
 
 SECRET_KEY = os.environ["SECRET_KEY"]
