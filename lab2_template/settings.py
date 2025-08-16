@@ -1,17 +1,22 @@
-# PostgreSQL
+"""Postgres Configuration."""
+
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': '#Replace it with generated password#',
-        'HOST': 'postgres',
-        'PORT': '5432',
-    }
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": os.getenv("POSTGRES_DB"),
+        "USER": os.getenv("POSTGRES_USER"),
+        "PASSWORD": os.getenv("POSTGRES_PASSWORD"),
+        "HOST": "postgres",
+        "PORT": "5432",
+    },
 }
 
-INSTALLED_APPS = (
-    'crud',
-)
+INSTALLED_APPS = ("crud",)
 
-SECRET_KEY = 'SECRET KEY for this Django Project'
+SECRET_KEY = os.getenv("SECRET_KEY")
