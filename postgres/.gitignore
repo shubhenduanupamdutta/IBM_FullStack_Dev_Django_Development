@@ -1,0 +1,3 @@
+# Ignore Docker volumes and database files
+postgres_data/
+*.env
