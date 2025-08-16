@@ -15,6 +15,7 @@ members = ["lab1_template"]
 
 [tool.ruff]
 line-length = 99
+exclude = ["migrations"]
 
 [tool.ruff.lint]
 ignore = ["INP001", "D100", "D101", "D105"]
