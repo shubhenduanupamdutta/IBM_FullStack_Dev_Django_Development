@@ -1,0 +1,19 @@
+version = 1
+revision = 3
+requires-python = ">=3.11"
+
+[manifest]
+members = [
+    "django-app-development",
+    "firstdjangomodel",
+]
+
+[[package]]
+name = "django-app-development"
+version = "0.1.0"
+source = { virtual = "." }
+
+[[package]]
+name = "firstdjangomodel"
+version = "0.1.0"
+source = { virtual = "lab1_template" }
