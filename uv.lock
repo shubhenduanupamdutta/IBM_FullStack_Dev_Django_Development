@@ -38,12 +38,14 @@ source = { virtual = "." }
 dependencies = [
     { name = "django" },
     { name = "psycopg2-binary" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "django", specifier = "==4.2.4" },
     { name = "psycopg2-binary", specifier = "==2.9.7" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
 ]
 
 [[package]]
@@ -53,12 +55,14 @@ source = { virtual = "lab1_template" }
 dependencies = [
     { name = "django" },
     { name = "psycopg2-binary" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "django", specifier = "==4.2.4" },
     { name = "psycopg2-binary", specifier = "==2.9.7" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
 ]
 
 [[package]]
@@ -79,6 +83,15 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/9b/ae/dd11e38562224721f4928147ce70fa17f2c28fc562a22a40cc0db1026297/psycopg2_binary-2.9.7-cp311-cp311-musllinux_1_1_x86_64.whl", hash = "sha256:1011eeb0c51e5b9ea1016f0f45fa23aca63966a4c0afcf0340ccabe85a9f65bd", size = 2451293, upload-time = "2023-08-05T10:37:16.247Z" },
     { url = "https://files.pythonhosted.org/packages/c0/75/cf5dd290e8f910e6e566077f3f91ee4bb7622d2adf9d4187d4814249e779/psycopg2_binary-2.9.7-cp311-cp311-win32.whl", hash = "sha256:ded8e15f7550db9e75c60b3d9fcbc7737fea258a0f10032cdb7edc26c2a671fd", size = 1020743, upload-time = "2023-08-05T10:37:18.463Z" },
     { url = "https://files.pythonhosted.org/packages/37/d8/6d94513d2bc993cdbf309017425b2b691da2b0e26b446d17866c57f99d8c/psycopg2_binary-2.9.7-cp311-cp311-win_amd64.whl", hash = "sha256:8a136c8aaf6615653450817a7abe0fc01e4ea720ae41dfb2823eccae4b9062a3", size = 1158890, upload-time = "2023-08-05T10:37:20.868Z" },
+]
+
+[[package]]
+name = "python-dotenv"
+version = "1.1.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/f6/b0/4bc07ccd3572a2f9df7e6782f52b0c6c90dcbb803ac4a167702d7d0dfe1e/python_dotenv-1.1.1.tar.gz", hash = "sha256:a8a6399716257f45be6a007360200409fce5cda2661e3dec71d23dc15f6189ab", size = 41978, upload-time = "2025-06-24T04:21:07.341Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/5f/ed/539768cf28c661b5b068d66d96a2f155c4971a5d55684a514c1a0e0dec2f/python_dotenv-1.1.1-py3-none-any.whl", hash = "sha256:31f23644fe2602f88ff55e1f5c79ba497e01224ee7737937930c448e4d0e24dc", size = 20556, upload-time = "2025-06-24T04:21:06.073Z" },
 ]
 
 [[package]]
