@@ -11,7 +11,10 @@ dependencies = [
 ]
 
 [tool.uv.workspace]
-members = ["lab1_template"]
+members = [
+    "lab1_template",
+    "ormtemplate",
+]
 
 [tool.ruff]
 line-length = 99
