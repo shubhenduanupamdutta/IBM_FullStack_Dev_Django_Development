@@ -39,24 +39,5 @@ docker-compose up -d
 
 ---
 
-Using `mcp: add server` command, you can add the PostgreSQL server to your MCP configuration.
-
-finally this results in `mcp.json` file in `.vscode` folder
-
-```json
-{
- "servers": {
-  "postgres": {
-   "command": "npx",
-   "args": [
-    "-y",
-    "@model-context-protocol/server-postgres@0.6.2",
-    "postgresql://<user>:<password>@localhost:5432/<db>"
-   ],
-   "env": {},
-   "type": "stdio"
-  }
- },
- "inputs": []
-}
-```
+Install PostgreSQL extension for Visual Studio Code by microsoft, that provides rich language support for PostgreSQL, including syntax highlighting, code completion, and query execution.
+Also it provides mcp support for PostgreSQL.
