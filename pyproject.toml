@@ -11,15 +11,12 @@ dependencies = [
 ]
 
 [tool.uv.workspace]
-members = [
-    "lab1_template",
-    "ormtemplate",
-    "lab2_template",
-]
+members = ["lab1_template", "ormtemplate", "lab2_template"]
 
 [tool.ruff]
 line-length = 99
 exclude = ["migrations"]
 
 [tool.ruff.lint]
+select = ["ALL"]
 ignore = ["INP001", "D100", "D101", "D105"]

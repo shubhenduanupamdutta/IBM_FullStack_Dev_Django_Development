@@ -6,6 +6,8 @@ requires-python = ">=3.11"
 members = [
     "django-app-development",
     "firstdjangomodel",
+    "lab2-template",
+    "ormtemplate",
 ]
 
 [[package]]
@@ -52,6 +54,28 @@ requires-dist = [
 name = "firstdjangomodel"
 version = "0.1.0"
 source = { virtual = "lab1_template" }
+dependencies = [
+    { name = "django" },
+    { name = "psycopg2-binary" },
+    { name = "python-dotenv" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "django", specifier = "==4.2.4" },
+    { name = "psycopg2-binary", specifier = "==2.9.7" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
+]
+
+[[package]]
+name = "lab2-template"
+version = "0.1.0"
+source = { virtual = "lab2_template" }
+
+[[package]]
+name = "ormtemplate"
+version = "0.1.0"
+source = { virtual = "ormtemplate" }
 dependencies = [
     { name = "django" },
     { name = "psycopg2-binary" },
