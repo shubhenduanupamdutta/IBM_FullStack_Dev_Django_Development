@@ -24,4 +24,4 @@ exclude = ["migrations"]
 
 [tool.ruff.lint]
 select = ["ALL"]
-ignore = ["INP001", "D100", "D101", "D105"]
+ignore = ["INP001", "D100", "D101", "D105", "D103"]
